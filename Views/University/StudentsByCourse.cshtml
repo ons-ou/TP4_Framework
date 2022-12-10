@@ -10,28 +10,32 @@
             <th scope="col">Last Name</th>
             <th scope="col">Phone Number</th>
             <th scope="col">University</th>
+            <th scope="col">Timestamp</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var p in Model)
         {
-            <tr>
-                <th scope="row">
-                    @p.id
-                </th>
-                <td>
-                    @p.first_name
-                </td>
-                <td>
-                    @p.last_name
-                </td>
-                <td>
-                    @p.phone_number
-                </td>
-                <td>
-                    @p.university
-                </td>
-            </tr>
+        <tr>
+            <th scope="row">
+                @p.id
+            </th>
+            <td>
+                @p.first_name
+            </td>
+            <td>
+                @p.last_name
+            </td>
+            <td>
+                @p.phone_number
+            </td>
+            <td>
+                @p.university
+            </td>
+            <td>
+                @p.timestamp
+            </td>
+        </tr>
         }
     </tbody>
 </table>

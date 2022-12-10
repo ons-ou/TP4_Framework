@@ -59,7 +59,7 @@ namespace TP4
 
                 endpoints.MapControllerRoute(
                         "University",
-                        "students/{course}",
+                        "courses/{course}",
                         defaults: new { controller = "University", action = "StudentsByCourse" });
             });
 
